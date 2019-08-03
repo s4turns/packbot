@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const client = require("./config.json");
-  
+const client = require('./config.json');
+
 client.on('ready', () => {
   console.log('PackBot is up and running motherfucker!');
   client.user.setActivity("Type !help");
