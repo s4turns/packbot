@@ -66,9 +66,6 @@ client.on("message", message => {
   if(command === 'ping') {
   message.channel.send('Pong!');
   } else
-  if (command === 'blah') {
-  message.channel.send('Meh.');
-  }
   if (command === "asl") {
   let age = args[0];
   let sex = args[1];
