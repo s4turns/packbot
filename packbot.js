@@ -78,7 +78,7 @@ client.on("message", message => {
   }
   if (command === "beer") {
   let user = args[0];
-  message.reply(`here ${user}! take this an ice cold beer! Its a Warsteiner!`!!);
+  message.reply(`here ${user}! take this an ice cold beer! Its a Warsteiner!`);
   }
   if (command === "help") {
   message.reply("`my current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah`");
