@@ -51,9 +51,6 @@ client.on('message', msg => {
    if (msg.content === '!applegroo') {
    msg.reply('he is the best builder there is, his knowledge of physics empowers his building skills.')
   }
-   if (msg.content === 'pray') {
-		 msg.reply('In nomine Patris, et Filii, et Spiritus Sancti. Amen')
-	 }
 });
 
 client.on("message", message => {
