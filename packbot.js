@@ -70,11 +70,11 @@ client.on("message", message => {
   let age = args[0];
   let sex = args[1];
   let location = args[2];
-  message.reply(`Hello ${message.author.username}, I see youre a ${age} year old ${sex} from ${location}. Wanna date?`);
+  message.channel.send(`Hello ${message.author.username}, I see youre a ${age} year old ${sex} from ${location}. Wanna date?`);
   }
   if (command === "bong") {
   let user = args[0];
-  message.reply(`passed the bong to ${user}. Lets get baked bitch!`);
+  message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
   }
   if (command === "beer") {
   let user = args[0];
