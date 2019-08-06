@@ -87,7 +87,7 @@ client.on("message", message => {
   message.channel.send(`here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
   }
   if (command === "edibles") {
-  message.reply(`smashes a bunch of gummies and weed cookies!!`, { file: "https://i.imgur.com/MNPnIAf.jpg" });
+  message.reply(`smashed a bunch of gummies and weed cookies!!`, { file: "https://i.imgur.com/MNPnIAf.jpg" });
   }
   if (command === "help") {
   message.reply("`my current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah`");
