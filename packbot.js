@@ -74,7 +74,7 @@ client.on("message", message => {
   }
   else if (command === "bong") {
     if (!message.mentions.users.size) {
-  	return message.reply('you need to tag a user dumbass!');
+  	return message.reply('here take this bong and shut the fuck up!');
   let user = args[0];
   message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
     }
