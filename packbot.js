@@ -39,9 +39,6 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-//  if (msg.content === '!beer') {
-//   msg.reply('here take this an ice cold beer! Its a Warsteiner!')
-//  }
   if (msg.content === '!pray') {
    msg.reply('In nomine Patris, et Filii, et Spiritus Sancti. Amen!')
   }
@@ -73,10 +70,15 @@ client.on("message", message => {
   message.channel.send(`Hello ${message.author.username}, I see youre a ${age} year old ${sex} from ${location}. Wanna date?`);
   }
   else if (command === "bong") {
+    let user = args[0];
     if (!message.mentions.users.size) {
   	return message.reply('here take this bong and shut the fuck up!');
+<<<<<<< HEAD
   let user = args[0];
   message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
+=======
+    message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
+>>>>>>> f2f3fcbc56c421c496ba1408498a1afc2abfc695
     }
   }
   else if (command === "beer") {
