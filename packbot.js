@@ -86,6 +86,9 @@ client.on("message", message => {
   let user2 = args[0];
   message.channel.send(`here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
   }
+  if (command === "edibles") {
+  message.reply(`here ${user}, have some edibles please enjoy!!`);
+  }
   if (command === "help") {
   message.reply("`my current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah`");
   }
