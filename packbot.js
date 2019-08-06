@@ -72,8 +72,8 @@ client.on("message", message => {
   else if (command === "bong") {
     if (!message.mentions.users.size) {
   	return message.reply('here take this bong and shut the fuck up!');
-    let userb = args[0];
-    message.channel.send(`passed the bong to ${userb}. Lets get baked bitch!`);
+    let user = args[0];
+    message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
     }
   }
   else if (command === "beer") {
