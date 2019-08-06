@@ -84,6 +84,6 @@ client.on("message", message => {
   if (command === "help") {
   message.reply("`my current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah`");
   }
-});
+};
 
 client.login(config.token);
