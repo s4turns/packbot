@@ -73,17 +73,17 @@ client.on("message", message => {
   message.channel.send(`Hello ${message.author.username}, I see youre a ${age} year old ${sex} from ${location}. Wanna date?`);
   }
   else if (command === "bong") {
-    let user = args[0];
     if (!message.mentions.users.size) {
   	return message.reply('you need to tag a user dumbass!');
-  message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
+    let user = args[0];
+    message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
     }
   }
   else if (command === "beer") {
-    let user = args[0];
     if (!message.mentions.users.size) {
   	return message.reply('you need to tag a user dumbass!');
-  message.channel.send(`here ${user}! take this an ice cold beer! Its a Warsteiner!`);
+    let user2 = args[0];
+    message.channel.send(`here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
     }
   }
   if (command === "help") {
