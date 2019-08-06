@@ -72,24 +72,15 @@ client.on("message", message => {
   else if (command === "bong") {
     if (!message.mentions.users.size) {
   	return message.reply('here take this bong and shut the fuck up!');
-<<<<<<< HEAD
-<<<<<<< HEAD
-  let user = args[0];
-  message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
-=======
-    message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
->>>>>>> f2f3fcbc56c421c496ba1408498a1afc2abfc695
-=======
     let userb = args[0];
     message.channel.send(`passed the bong to ${userb}. Lets get baked bitch!`);
->>>>>>> edca10a3b67e968352bb7d24b4434c8170ea3ebe
     }
   }
   else if (command === "beer") {
     if (!message.mentions.users.size) {
   	return message.reply('you need to tag a user dumbass!');
-  let user = args[0];
-  message.channel.send(`here ${user}! take this an ice cold beer! Its a Warsteiner!`);
+    let user = args[0];
+    message.channel.send(`here ${user}! take this an ice cold beer! Its a Warsteiner!`);
     }
   }
   if (command === "help") {
