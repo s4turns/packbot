@@ -39,9 +39,6 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-//  if (msg.content === '!beer') {
-//   msg.reply('here take this an ice cold beer! Its a Warsteiner!')
-//  }
   if (msg.content === '!pray') {
    msg.reply('In nomine Patris, et Filii, et Spiritus Sancti. Amen!')
   }
