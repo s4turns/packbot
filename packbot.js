@@ -80,6 +80,9 @@ client.on("message", message => {
    if(args.length > 1){
     return message.reply('You can only pass a beer to a single user!');
    }
+   else if (args.length === 0) {
+    return message.reply(`here! take this! an ice cold beer! is a Warsteiner! Prost!`);
+   }
    else if (!message.mentions.users.size) {
     return message.reply('you need to tag a user dumbass!');
    }
@@ -96,4 +99,4 @@ client.on("message", message => {
   }
 });
 
-client.login('NDYzMTI2OTA2MTMzNDEzOTAw.XUpzzQ.Ltfnd7fcHU066QCzjYEQggDZwpE');
+client.login(config.token);
