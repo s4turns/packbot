@@ -80,7 +80,7 @@ client.on("message", message => {
     message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
   }
   if (command === "beer") {
-   if(args.length > 2){
+   if(args.length > 1){
     return message.reply('You can only pass a beer to a single user!');
    }
    else if (!message.mentions.users.size) {
