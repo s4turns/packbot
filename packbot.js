@@ -79,12 +79,17 @@ client.on("message", message => {
     let user = args[0];
     message.channel.send(`passed the bong to ${user}. Lets get baked bitch!`);
   }
-  else if (command === "beer") {
-    if (!message.mentions.users.size) {
-  	return message.reply('you need to tag a user dumbass!');
-  }
-  let user2 = args[0];
-  message.channel.send(`here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
+  if (command === "beer") {
+   if(args.length > 2){
+    return message.reply('You can only pass a beer to a single user!');
+   }
+   else if (!message.mentions.users.size) {
+    return message.reply('you need to tag a user dumbass!');
+   }
+   else {
+    let user2 = args[1];
+    message.channel.send(`here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
+   }
   }
   if (command === "edibles") {
   message.reply(`enjoy some of these edibles`, { file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" });
