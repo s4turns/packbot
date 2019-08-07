@@ -87,7 +87,7 @@ client.on("message", message => {
     return message.reply('you need to tag a user dumbass!');
    }
    else {
-    let user2 = args[1];
+    let user2 = args[0];
     message.channel.send(`here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
    }
   }
