@@ -94,6 +94,20 @@ client.on("message", message => {
   if (command === "edibles") {
   message.reply(`enjoy some of these edibles`, { file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" });
   }
+
+  if (command === "ud") {
+   if (args.length != 1) {
+    return message.reply(`USAGE: !ud <single search term>`);
+	 }
+   else if (args[0].length > 10) {
+    return message.reply(`your search term is too long... who you trying to fuck with nigga`);
+	 }
+   else {
+    let search_term = args[0];
+		console.log(args[0].length);
+    message.channel.send(`https://www.urbandictionary.com/define.php?term=${search_term}`);
+   }
+	}
   if (command === "help") {
   message.reply("`my current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah`");
   }
