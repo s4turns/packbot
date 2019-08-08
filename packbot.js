@@ -106,13 +106,13 @@ client.on("message", message => {
     message.channel.send(`https://www.urbandictionary.com/define.php?term=${search_term}`);
    }
   }
-	if (command === "joint") {
+  if (command === "joint") {
    if (args.lenght > 0) {
-	  return message.reply(`you can only light YOUR OWN joint, sorry!`);
-	 }
-	 else {
-    message.channel.send(`lights ${message.author.username} joint! smoke up broheim!`);
-	 }
+    return message.reply(`you can only light YOUR OWN joint, sorry!`);
+   }
+   else {
+   message.channel.send(`lights ${message.author.username} joint! smoke up broheim!`);
+   }
   }
   if (command === "help") {
   message.reply("`my current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah`");
