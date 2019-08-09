@@ -57,6 +57,9 @@ client.on("message", message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
+  if(command === 'bøtte') {
+  message.reply('Here enjoy this bøtte!', { file: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Buckie.JPG/800px-Buckie.JPG" } );
+  }
   if(command === 'ping') {
   message.channel.send('Pong!');
   } else
