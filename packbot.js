@@ -58,7 +58,10 @@ client.on("message", message => {
   const command = args.shift().toLowerCase();
 
   if(command === 'bøtte') {
-  message.reply('Here enjoy this bøtte!', { file: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Buckie.JPG/800px-Buckie.JPG" } );
+   if(args.length > 1) {
+    message.reply(`this command takes NO ARGUMENTS!!! lel`);
+   }
+   message.reply('Here enjoy this bøtte!', { file: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Buckie.JPG/800px-Buckie.JPG" } );
   }
   if(command === 'ping') {
   message.channel.send('Pong!');
