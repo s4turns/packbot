@@ -58,7 +58,7 @@ client.on("message", message => {
   const command = args.shift().toLowerCase();
   const avatarList = message.mentions.users.map(user => {
   			return `${user.username}'s avatar: <${user.displayAvatarURL}>`;
-        
+
   if(command === 'bøtte') {
    if(args.length > 0) {
     return message.reply(`this command takes NO ARGUMENTS!!! lel`);
@@ -138,6 +138,6 @@ client.on("message", message => {
 		message.channel.bulkDelete(amount, true).catch(err => {
 			console.error(err);
 			message.channel.send('there was an error trying to prune messages in this channel!');
-});
-
+  });
+}
 client.login(config.token);
