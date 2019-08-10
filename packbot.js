@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const config = require("./config.json");
-const prefix = require('./config.json');
+const { prefix, token } = require('./config.json');
 
 client.on('ready', () => {
   console.log('PackBot is up and running motherfucker!');
@@ -177,4 +176,4 @@ client.on('message', message => {
 	}
 });
 
-client.login(config.token);
+client.login(token);
