@@ -129,12 +129,7 @@ client.on("message", message => {
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-	const args = message.content.slice(prefix.length).split(/ +/);
-	const command = args.shift().toLowerCase();
-
-	if (command === 'ping') {
-		message.channel.send('Pong.');
-	} else if (command === 'beep') {
+  if (command === 'beep') {
 		message.channel.send('Boop.');
 	} else if (command === 'server') {
 		message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}`);
