@@ -4,7 +4,7 @@ const { prefix, token } = require('./config.json');
 
 client.on('ready', () => {
   console.log('PackBot is up and running motherfucker!');
-  client.user.setActivity("Type !help");
+  client.user.setActivity("!help");
 });
 
 client.on('message', msg => {
@@ -121,7 +121,7 @@ client.on("message", message => {
    }
   }
   if (command === "help") {
-  message.reply("`my current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah`");
+  message.reply("`my current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah !ud !bøtte !prune !kick !server !avatar`");
   }
 });
 
