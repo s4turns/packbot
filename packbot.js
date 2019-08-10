@@ -56,7 +56,9 @@ client.on("message", message => {
 
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-
+  const avatarList = message.mentions.users.map(user => {
+  			return `${user.username}'s avatar: <${user.displayAvatarURL}>`;
+        
   if(command === 'bøtte') {
    if(args.length > 0) {
     return message.reply(`this command takes NO ARGUMENTS!!! lel`);
@@ -123,6 +125,19 @@ client.on("message", message => {
   if (command === "help") {
   message.reply("`my current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah`");
   }
+  message.channel.send(avatarList);
+	} else if (command === 'prune') {
+		const amount = parseInt(args[0]) + 1;
+
+		if (isNaN(amount)) {
+			return message.reply('that doesn\'t seem to be a valid number.');
+		} else if (amount <= 1 || amount > 100) {
+			return message.reply('you need to input a number between 1 and 99.');
+		}
+
+		message.channel.bulkDelete(amount, true).catch(err => {
+			console.error(err);
+			message.channel.send('there was an error trying to prune messages in this channel!');
 });
 
 client.login(config.token);
