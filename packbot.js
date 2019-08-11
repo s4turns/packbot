@@ -4,12 +4,12 @@ const { prefix, token } = require('./config.json');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 
-fs.readdir("./commands", (err, files) => {
+fs.readdir("./events", (err, files) => {
   let cmds = files.filter(f => f.split(".").pop() === "js");
   console.log(`loading ${cmds.length} commands`);
   
   cmds.forEach((f, i) => {
-    let props = require(`./commands/${f}`);
+    let props = require(`./events/${f}`);
     console.log(`[+] ${i + 1}: ${f} loaded!`);
     client.commands.set(f, props);
   });
