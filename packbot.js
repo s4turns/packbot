@@ -176,7 +176,7 @@ client.on('message', message => {
 		});
 
 		message.channel.send(avatarList);
-	} else if (command === 'prune') {
+	} else if (command === 'prune' && message.author.id === '305119858063048704') {
 		const amount = parseInt(args[0]) + 1;
 
 		if (isNaN(amount)) {
