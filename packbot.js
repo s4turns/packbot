@@ -7,7 +7,7 @@ client.commands = new Discord.Collection();
 fs.readdir("./events", (err, files) => {
   let cmds = files.filter(f => f.split(".").pop() === "js");
   console.log(`loading ${cmds.length} commands`);
-  
+
   cmds.forEach((f, i) => {
     let props = require(`./events/${f}`);
     console.log(`[+] ${i + 1}: ${f} loaded!`);
@@ -59,7 +59,7 @@ client.on('message', msg => {
    msg.reply('interdome? that nigga in #201337, he is so fucking 80s, he is listening to gg allen!!')
   }
    if (msg.content === '!applegroo') {
-   msg.reply('he is the best builder there is, his knowledge of physics empowers his building skills.')
+   msg.reply('He is the best builder there is, his knowledge of physics empowers his building skills.')
   }
 });
 
@@ -90,7 +90,7 @@ client.on("message", message => {
   }
   else if (command === "bong") {
     if (!message.mentions.users.size) {
-  	return message.reply('you need to tag a user dumbass!');
+  	return message.reply('You need to tag a user dumbass!');
   }
     let user = args[0];
     message.channel.send(`${message.author.username} passed the bong to ${user}. Lets get baked bitch!`);
@@ -100,25 +100,32 @@ client.on("message", message => {
     return message.reply('You can only pass a beer to a single user!');
    }
    else if (args.length === 0) {
-    return message.reply(`here! take this! an ice cold beer! is a Warsteiner! Prost!`);
+    return message.reply(`Here! take this! an ice cold beer! is a Warsteiner! Prost!`);
+   }
+   else if (command === "fed") {
+     if (!message.mentions.users.size) {
+   	return message.reply('You need to tag a user dumbass!');
+   }
+     let fed = args[0];
+     message.channel.send(`FED ALERT! FED ALERT! * ${fed} * is a FED!! oh shit! oh shit! FED ALERT!`);
    }
    else if (!message.mentions.users.size) {
-    return message.reply('you need to tag a user dumbass!');
+    return message.reply('You need to tag a user dumbass!');
    }
    else {
     let user2 = args[0];
-    message.channel.send(`here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
+    message.channel.send(`Here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
    }
   }
   if (command === "edibles") {
-  message.reply(`enjoy some of these edibles`, { file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" });
+  message.reply(`Enjoy some of these edibles`, { file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" });
   }
   if (command === "ud") {
    if (args.length != 1) {
     return message.reply(`USAGE: !ud <single search term>`);
    }
    else if (args[0].length > 10) {
-    return message.reply(`your search term is too long... who you trying to fuck with nigga`);
+    return message.reply(`Your search term is too long... who you trying to fuck with nigga`);
    }
    else {
     let search_term = args[0];
@@ -127,14 +134,14 @@ client.on("message", message => {
   }
   if (command === "joint") {
    if (args.lenght > 0) {
-    return message.reply(`you can only light YOUR OWN joint, sorry!`);
+    return message.reply(`You can only light YOUR OWN joint, sorry!`);
    }
    else {
-   message.channel.send(`lights ${message.author.username} joint! smoke up broheim!`);
+   message.channel.send(`Lights ${message.author.username} joint! smoke up broheim!`);
    }
   }
   if (command === "help") {
-  message.reply("`my current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah !ud !bøtte !prune !kick !server !avatar`");
+  message.reply("`My current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah !ud !bøtte !prune !kick !server !avatar`");
   }
 });
 
@@ -160,7 +167,7 @@ client.on('message', message => {
 		message.channel.send(`First argument: ${args[0]}`);
 	} else if (command === 'kick') {
 		if (!message.mentions.users.size) {
-			return message.reply('you need to tag a user in order to kick them!');
+			return message.reply('You need to tag a user in order to kick them!');
 		}
 
 		const taggedUser = message.mentions.users.first();
@@ -182,12 +189,12 @@ client.on('message', message => {
 		if (isNaN(amount)) {
 			return message.reply('that doesn\'t seem to be a valid number.');
 		} else if (amount <= 1 || amount > 100) {
-			return message.reply('you need to input a number between 1 and 99.');
+			return message.reply('You need to input a number between 1 and 99.');
 		}
 
 		message.channel.bulkDelete(amount, true).catch(err => {
 			console.error(err);
-			message.channel.send('there was an error trying to prune messages in this channel!');
+			message.channel.send('There was an error trying to prune messages in this channel!');
 		});
 	}
 });
