@@ -112,9 +112,6 @@ client.on("message", message => {
      let fed = args[0];
      message.channel.send(`FED ALERT! FED ALERT! * ${fed} * is a FED!! oh shit! oh shit! FED ALERT!`);
    }
-   else if (!message.mentions.users.size) {
-    return message.reply('You need to tag a user dumbass!');
-   }
 
   if (command === "edibles") {
   message.reply(`Enjoy some of these edibles`, { file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" });
@@ -141,7 +138,7 @@ client.on("message", message => {
    }
   }
   if (command === "help") {
-  message.reply("`My current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah !ud !bøtte !prune !kick !server !avatar !fed`");
+  message.reply("`My current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah !ud !bøtte !prune !kick !server !avatar`");
   }
 });
 
