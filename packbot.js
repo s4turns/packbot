@@ -107,7 +107,7 @@ client.on("message", message => {
    	return message.reply('You need to tag a user dumbass!');
    }
      let fed = args[0];
-     message.channel.send(`FED ALERT! FED ALERT! * ${fed} * is a FED!! oh shit! oh shit! FED ALERT!`);
+     message.channel.send(`FED ALERT! FED ALERT! ${fed} is a FED!! oh shit! oh shit! FED ALERT!`);
    }
    else if (!message.mentions.users.size) {
     return message.reply('You need to tag a user dumbass!');
@@ -116,7 +116,6 @@ client.on("message", message => {
     let user2 = args[0];
     message.channel.send(`Here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
    }
-  }
   if (command === "edibles") {
   message.reply(`Enjoy some of these edibles`, { file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" });
   }
