@@ -102,7 +102,7 @@ client.on("message", message => {
    else if (args.length === 0) {
     return message.reply(`Here! take this! an ice cold beer! is a Warsteiner! Prost!`);
    }
-   else if (command === "fed") {
+  if (command === "fed") {
      if (!message.mentions.users.size) {
    	return message.reply('You need to tag a user dumbass!');
    }
@@ -117,6 +117,7 @@ client.on("message", message => {
     message.channel.send(`Here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
    }
   }
+
   if (command === "edibles") {
   message.reply(`Enjoy some of these edibles`, { file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" });
   }
