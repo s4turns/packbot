@@ -141,7 +141,7 @@ client.on("message", message => {
    }
   }
   if (command === "help") {
-  message.reply("`My current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah !ud !bøtte !prune !kick !server !avatar`");
+  message.reply("`My current commands are: !pack !bong !pray !beer !rounds !applegroo !interdome !ping !blah !ud !bøtte !prune !kick !server !avatar !fed`");
   }
 });
 
