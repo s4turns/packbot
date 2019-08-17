@@ -95,6 +95,7 @@ client.on("message", message => {
     let user = args[0];
     message.channel.send(`${message.author.username} passed the bong to ${user}. Lets get baked bitch!`);
   }
+
   if (command === "beer") {
    if(args.length > 1){
     return message.reply('You can only pass a beer to a single user!');
@@ -102,6 +103,8 @@ client.on("message", message => {
    else if (args.length === 0) {
     return message.reply(`Here! take this! an ice cold beer! is a Warsteiner! Prost!`);
    }
+ }
+
   if (command === "fed") {
      if (!message.mentions.users.size) {
    	return message.reply('You need to tag a user dumbass!');
@@ -112,11 +115,6 @@ client.on("message", message => {
    else if (!message.mentions.users.size) {
     return message.reply('You need to tag a user dumbass!');
    }
-   else {
-    let user2 = args[0];
-    message.channel.send(`Here ${user2}! take this an ice cold beer! Its a Warsteiner!`);
-   }
-  }
 
   if (command === "edibles") {
   message.reply(`Enjoy some of these edibles`, { file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" });
@@ -132,7 +130,8 @@ client.on("message", message => {
     let search_term = args[0];
     message.channel.send(`https://www.urbandictionary.com/define.php?term=${search_term}`);
    }
-  }
+}
+
   if (command === "joint") {
    if (args.lenght > 0) {
     return message.reply(`You can only light YOUR OWN joint, sorry!`);
