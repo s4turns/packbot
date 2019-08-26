@@ -1,4 +1,6 @@
 exports.run = (client, message, args) => {
+if (message.author.id === '305119858063048704' || message.author.id ===
+'332715070465376262' ) {
  const amount = parseInt(args[0]) + 1;
  
  if(isNaN(amount)) {
@@ -10,5 +12,6 @@ exports.run = (client, message, args) => {
  message.channel.bulkDelete(amount, true).catch(err => {
   console.error(err);
   message.channel.send('There was an error trying to prune messages in this channel!'); 
- });
+  });
+ }
 } 
