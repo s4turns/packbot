@@ -38,7 +38,6 @@ client.on('message', message => {
  if (message.content === '!pray') {message.reply('In nomine Patris, et Filii, et Spiritus Sancti. Amen!')}
  if (message.content === '!interdome') {message.reply('interdome? that nigga in #201337, he is so fucking 80s, he is listening to gg allen!!')}
  if (message.content === '!applegroo') {message.reply('He is the best builder there is, his knowledge of physics empowers his building skills.')}
- if (message.content === '!fed') {message.reply('')}
  if (message.content === '!edibles') {message.reply(`Enjoy some of these edibles`, { file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" })}
  if (message.content === '!joint') {message.channel.send(`Lights ${message.author.username} joint! smoke up broheim!`)}
 });
