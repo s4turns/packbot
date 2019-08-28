@@ -1,5 +1,5 @@
 exports.run = (client, message, args) => {
-	if (msg.author.bot) return;
+	if (message.author.bot) return;
 	message.channel.send("`\\|/\\|/ ` **listen up... public announcement**: Pick it, Pack it, just be ready for a chan wide toke-out in 30 seconds. `\\|/\\|/`");
     setTimeout(() => {
       message.channel.send("`\\|/\\|/` Ladies & Gents, get your __BOWLS, BONGS, DAB RIGS__ **READY**! `\\|/\\|/`")
