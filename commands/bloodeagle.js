@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
 		return;
 	}
 	if (message.mentions.users.size) {
-		message.channel.send(`np: Wardrune -Runaljod`);
+		message.channel.send(`np: Wardruna -Runaljod`);
 		setTimeout(() => {message.channel.send(`begins to cut ${taggedUser}`);}, 4500);
 		setTimeout(() => {message.channel.send(`${message.author} watches as ${taggedUser} makes no sound`);}, 6500);
 		setTimeout(() => {message.channel.send(`begins to open ${taggedUser}`);}, 8500);
