@@ -42,6 +42,7 @@ client.on('message', message => {
  if (command === 'edibles') {message.reply(`Enjoy some of these edibles`, {file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" });}
  if (command === 'joint') {message.channel.send(`Lights ${message.author.username} joint! smoke up broheim!`);}
  if (command === 'tax') {message.channel.send(`taxes? i think you better look at this`, {file: "http://i.imgur.com/mxrbcBX.jpg"});}
+ if (command === 'dff') {message.channel.send(`DFF: Dobby the Faggot Ferret!!!1 <3 `, {file: "https://i.imgur.com/7nac3rM.jpg"});}
 });
 
 client.login(config.token);
