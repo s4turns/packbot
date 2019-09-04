@@ -7,6 +7,6 @@ exports.run = (client, message, args) => {
   return message.channel.send(`FUCK OFF! that user is not a discord user DAGGOT!`);
  }
  if (message.mentions.users.size) {
-	return message.channel.send(`passed the bong to ${taggedUser}. Lets get baked bitch!`);
+	return message.channel.send(`Passed the bong to ${taggedUser}. Lets get baked bitch!`);
  }
 }
