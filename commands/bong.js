@@ -1,7 +1,8 @@
 exports.run = (client, message, args) => {
  let taggedUser = args[0];
  if (args.length === 0) {
- 	return message.channel.send("`Passed the bong to ${message.author.username} \n Lets get baked bitch!`");
+ 	return message.channel.send("`Passed the bong to ${message.author.username}`");
+  return message.channel.send("`Lets get baked bitch!`");
  }
  if (!message.mentions.users.size && args.length > 0) {
   return message.channel.send(`FUCK OFF! that user is not a discord user DAGGOT!`);
