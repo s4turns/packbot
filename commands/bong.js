@@ -10,9 +10,11 @@ exports.run = (client, message, args) => {
  if (message.mentions.users.size) {
 	return message.channel.send(`Passed the bong to ${taggedUser}.\nLets get baked bitch!`);
  }
- if (message.mentions.everyone) {
-  message.channel.guild.members.forEach(user => {
-	 message.channel.send(`Passed the bong to ${user}.\nLets get baked bitch!`);
-  });
- }
+
+//TODO: find the roleID for ballers to segment the bot replies
+// if (message.mentions.everyone) {
+//  message.channel.guild.members.forEach(user => {
+//	 message.channel.send(`Passed the bong to ${user}.\nLets get baked bitch!`);
+//  });
+// }
 }
