@@ -1,5 +1,5 @@
 exports.run = (client, message, args) => {
-if (message.author.id === '305119858063048704') {
+if (message.author.id === '305119858063048704' || message.author.id === '332715070465376262') {
  const amount = parseInt(args[0]) + 1;
  
  if(isNaN(amount)) {

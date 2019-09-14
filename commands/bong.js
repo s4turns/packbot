@@ -1,5 +1,7 @@
 exports.run = (client, message, args) => {
  let taggedUser = args[0];
+ let role = "323550435157999616";
+ let roleMembers = message.guild.roles.get(role).members.map(m=>m.user.tag);
  
  if (!message.mentions.users.size && args.length > 0) {
   return message.channel.send(`FUCK OFF! that user is not a discord user DAGGOT!`);
@@ -10,11 +12,11 @@ exports.run = (client, message, args) => {
  if (message.mentions.users.size) {
 	return message.channel.send(`Passed the bong to ${taggedUser}.\nLets get baked bitch!`);
  }
+ if (message.mentions.everyone) {
+  roleMembers.forEach(user => {
+   message.channel.send(`Passes the bong to ${user}\nLets get baked bitch!`);
+  });
+ }
 
-//TODO: find the roleID for ballers to segment the bot replies
-// if (message.mentions.everyone) {
-//  message.channel.guild.members.forEach(user => {
-//	 message.channel.send(`Passed the bong to ${user}.\nLets get baked bitch!`);
-//  });
-// }
+
 }
