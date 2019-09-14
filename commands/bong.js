@@ -3,9 +3,9 @@ exports.run = (client, message, args) => {
  let role = "323550435157999616";
  let roleMembers = message.guild.roles.get(role).members.map(m=>m.user.tag);
  
- if (!message.mentions.users.size && args.length > 0) {
-  return message.channel.send(`FUCK OFF! that user is not a discord user DAGGOT!`);
- }
+// if (!message.mentions.users.size && args.length > 0) {
+//  return message.channel.send(`FUCK OFF! that user is not a discord user DAGGOT!`);
+// }
  if (args.length === 0) {
  	return message.channel.send(`Passed the bong to ${message.author}\nLets get baked bitch!`);
  }
