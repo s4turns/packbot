@@ -34,6 +34,7 @@ client.on('ready', () => {
 
 //One liners
 client.on('message', message => {
+ if (message.author.bot) return;
  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
  const command = args.shift().toLowerCase();
  if (command === 'pray') {message.reply('In nomine Patris, et Filii, et Spiritus Sancti. Amen!')}
