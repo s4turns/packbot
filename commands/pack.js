@@ -2,7 +2,7 @@ exports.run = (client, message, args) => {
 	if (message.author.bot) return;
 	message.channel.send("`\\|/\\|/ ` **listen up... public announcement**: Pick it, Pack it, just be ready for a chan wide toke-out in 30 seconds. `\\|/\\|/`");
     setTimeout(() => {
-      message.channel.send("`\\|/\\|/` Ladies & Gents, get your __BOWLS, BONGS, DAB RIGS__ **READY**! `\\|/\\|/`")
+      message.channel.send("`\\|/\\|/` Ladies & Gents, get your __BØTTE, BOWLS, BONGS, DAB RIGS__ **READY**! `\\|/\\|/`")
       setTimeout(() => {message.channel.send("`\\|/\\|/\\|//\\|/\\|/\\|/` 5 `\\|/\\|/\\|//\\|/\\|/\\|/`")}, 1500);
       setTimeout(() => {message.channel.send("`\\|/\\|/\\|/\\|/`4 `\\|/\\|/\\|/\\|/`")}, 2500);
       setTimeout(() => {message.channel.send("`\\|/\\|/\\|/`3 `\\|/\\|/\\|/`")}, 3500);
