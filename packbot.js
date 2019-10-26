@@ -44,6 +44,7 @@ client.on('message', message => {
  if (command === 'joint') {message.channel.send(`Lights ${message.author.username} joint! smoke up broheim!`);}
  if (command === 'tax') {message.channel.send(`taxes? i think you better look at this`, {file: "http://i.imgur.com/mxrbcBX.jpg"});}
  if (command === 'dff') {message.channel.send(`DFF: Dobby the Faggot Ferret!!!1 <3 `, {file: "https://i.imgur.com/7nac3rM.jpg"});}
+ if (command === 'bøtte') {message.channel.send(`Here enjoy this bøtte!', { file: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Buckie.JPG/800px-Buckie.JPG"});}
 });
 
 client.login(config.token);
