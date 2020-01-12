@@ -45,6 +45,7 @@ client.on('message', message => {
  if (command === 'tax') {message.channel.send(`taxes? i think you better look at this`, {file: "http://i.imgur.com/mxrbcBX.jpg"});}
  if (command === 'dff') {message.channel.send(`DFF: Dobby the Faggot Ferret!!!1 <3 `, {file: "https://i.imgur.com/7nac3rM.jpg"});}
  if (command === 'bøtte') {message.channel.send(`Here enjoy this bøtte!`, {file: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Buckie.JPG/800px-Buckie.JPG"});}
+ if (command === 'roll') {message.channel.send(`Fuck yeah!! ${message.author.username} is rolling up that joint, be ready for the great passing!`, {file: "https://i.redd.it/klvo4ye5v7sz.jpg"});}
 });
 
 client.login(config.token);
