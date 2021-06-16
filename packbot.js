@@ -47,6 +47,7 @@ client.on('message', message => {
  if (command === 'bøtte') {message.channel.send(`hre enjoy this bøtte!`, {file: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Buckie.JPG/800px-Buckie.JPG"});}
  if (command === 'roll') {message.channel.send(`fuck yeah!! ${message.author.username} is rolling up that joint, be ready for the great passing!`, {file: "https://i.redd.it/klvo4ye5v7sz.jpg"});}
  if (command === 'vape') {message.channel.send(`${message.author.username} is preparing to heat up some good shit! Pack that vaper!`, {file: "https://weedmaps.com/news/wp-content/uploads/2021/01/4943_Big-Bear_Dry-Herb-Vape_020-2-2.jpg"});}
+ if (command === 'float') {message.channel.send(`${message.author.username} is floating away high as FUCK!`, {file: "https://media1.tenor.com/images/5e18679146db25733b2824b103fb73b7/tenor.gif?itemid=9879658"});}
 });
 
 client.login(config.token);
