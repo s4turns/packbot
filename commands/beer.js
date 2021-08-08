@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
 		message.reply(`Here! take this! an ice cold beer! is a Warsteiner! Prost!`);
 	}
 	if (!message.mentions.users.size && args.length > 0) {
-		return message.channel.send(`FUCK OFF! that user is not a discord user WAGGOT!`);
+		return message.channel.send(`FUCK OFF! That user is not a discord user WAGGOT!`);
 	}
 	if (message.mentions.users.size) {
 		return message.channel.send(`Here! ${user} an ice cold beer! is a WarSteiner! Prost!`);
