@@ -38,7 +38,7 @@ client.on('message', message => {
  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
  const command = args.shift().toLowerCase();
  if (command === 'pray') {message.reply('In nomine Patris, et filii, et spiritus sancti. amen!')}
- if (command === 'interdome') {message.reply('interdome? that nigga in #201337, he is so fucking 80s, he is listening to gg allen!!');}
+ if (command === 'interdome') {message.reply('interdome? that nigga in #201337, he is so fucking 80s, he is listening to gg allin!!');}
  if (command === 'applegroo') {message.reply('He is the best builder there is, his knowledge of physics empowers his building skills.');}
  if (command === 'edibles') {message.reply(`Enjoy some of these edibles`, {file: "https://media.giphy.com/media/GJ6SBog5lpi7u/giphy.gif" });}
  if (command === 'joint') {message.channel.send(`Let me light that DOINT ${message.author.username}! Smoke up broheim!`);}
