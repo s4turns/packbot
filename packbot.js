@@ -49,6 +49,7 @@ client.on('message', message => {
  if (command === 'vape') {message.channel.send(`${message.author.username} is preparing to heat up some good shit! Pack that vaper!`, {file: "https://weedmaps.com/news/wp-content/uploads/2021/01/4943_Big-Bear_Dry-Herb-Vape_020-2-2.jpg"});}
  if (command === 'float') {message.channel.send(`${message.author.username} is floating away high as FUCK!`, {file: "https://raw.githubusercontent.com/s4turns/PackBot/master/files/images/float.gif"});}
  if (command === 'grill') {message.channel.send(`${message.author.username} fires up the fucking grill, fuck its a wonderful day!`, {file: "https://i.imgur.com/5Dy5CQI.jpeg"});}
+ if (command === 'line') {message.channel.send(`Here have a huge fucking rail of a line ${message.author.username}`, {file: "https://i.imgur.com/o2d78oW.png"});}
 });
 
 client.login(config.token);
