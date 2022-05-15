@@ -1,5 +1,3 @@
-<img src="https://7.interdo.me/s/EArDjEob68y2FbR/download/21096-3-terminator-image.png" class="center">
-
 # PackBot
 A collab shitcord bot for IRC/Discord degenerates. Packing weed, giving drinks, user moderation, and other fun commands.
 
