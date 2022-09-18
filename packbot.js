@@ -52,4 +52,4 @@ client.on('message', message => {
  if (command === 'line') {message.channel.send(`Here have a huge fucking rail of a line ${message.author.username}`, {file: "https://i.imgur.com/o2d78oW.png"});}
 });
 
-client.login(config.token);
+client.login(token);
