@@ -1,7 +1,7 @@
-const Discord = require('discord.js');
+const { Client, Intents } = require('discord.js');
 const Enmap = require('enmap');
 const fs = require('fs');
-const client = new Discord.Client();
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 const config = require("./config.json");
 client.config = config;
 
