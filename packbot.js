@@ -1,8 +1,8 @@
-const { Client, Intents } = require('discord.js');
+const { Client, GatewayIntentBits } = require('discord.js');
 const Enmap = require('enmap');
 const fs = require('fs');
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
-const config = require("./config.json");
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const { token } = require('./config.json');
 client.config = config;
 
 fs.readdir("./events/", (err, files) => {
