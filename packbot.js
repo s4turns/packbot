@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits } = require('discord.js');
+const { Client, Enmap, GatewayIntentBits } = require('discord.js');
 const Enmap = require('enmap');
 const fs = require('fs');
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
