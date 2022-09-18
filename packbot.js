@@ -3,7 +3,6 @@ const Enmap = require('enmap');
 const fs = require('fs');
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 const { token } = require('./config.json');
-#client.config = config;
 
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
